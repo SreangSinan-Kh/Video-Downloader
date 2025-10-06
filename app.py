@@ -7,7 +7,7 @@ from flask import Flask, request
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 # អាន​ទិន្នន័យ​សម្ងាត់​ពី Environment Variables
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
+BOT_TOKEN = os.environ.get("8266666743:AAEU0Ufyc3FxJvCJZ6BzXlKSs_3ZFoPtF6k")
 # សម្រាប់ Webhook ត្រូវ​ប្រើ URL របស់ Render
 WEBHOOK_URL = f"https://YOUR_RENDER_SERVICE_NAME.onrender.com/{BOT_TOKEN}"
 # ត្រូវ​កំណត់​លេខ​សម្ងាត់​ដើម្បី​សុវត្ថិភាព
@@ -55,4 +55,5 @@ if __name__ == "__main__":
         secret_token=SECRET
     )
     # ដំណើរការ Flask App ដោយ​ប្រើ Gunicorn នៅ​ពេល​ដាក់​ពង្រាយ
+
     app.run(host="0.0.0.0", port=PORT)
