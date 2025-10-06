@@ -2,4 +2,4 @@ python-telegram-bot
 yt-dlp
 Flask
 gunicorn
-requests  <-- បន្ថែម​បន្ទាត់​នេះ!
+requests
