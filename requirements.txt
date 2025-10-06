@@ -1,4 +1,5 @@
 python-telegram-bot
 yt-dlp
-Flask         # បន្ថែម Flask សម្រាប់ Webhook
-gunicorn      # សម្រាប់​ដំណើរការ Flask app លើ Render
+Flask
+gunicorn
+requests  <-- បន្ថែម​បន្ទាត់​នេះ!
