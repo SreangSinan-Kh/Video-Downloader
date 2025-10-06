@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 
 # អាន​ទិន្នន័យ​សម្ងាត់​ពី Environment Variables
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
-WEBHOOK_URL = f"https://YOUR_RENDER_SERVICE_NAME.onrender.com/{BOT_TOKEN}"
+WEBHOOK_URL = f"https://video-downloader-p6ks.onrender.com/{BOT_TOKEN}"
 SECRET = os.environ.get("WEBHOOK_SECRET", "default_secret_key") # គួរ​ប្រើ​តម្លៃ​ពិត
 PORT = int(os.environ.get("PORT", 10000))
 DOWNLOAD_PATH = "/tmp/%(title)s.%(ext)s" # ផ្លាស់ប្តូរ​ទៅ​ជា​ឈ្មោះ​ឯកសារ​ឌីណាមិក
@@ -218,3 +218,4 @@ if __name__ == "__main__":
 
     # ដំណើរការ Flask App ដោយ​ប្រើ Gunicorn នៅ​ពេល​ដាក់​ពង្រាយ
     app.run(host="0.0.0.0", port=PORT)
+
